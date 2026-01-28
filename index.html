@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animal Crossing</title>
+		<style>
+
+			body{
+			    background: url(https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/nenwhorizons.jpg);
+			    background-size: cover;
+			    background-attachment: fixed;
+			    color:#6a3131;
+			    font-family: monospace;
+			}
+			.box{
+			    background-color: #ebd7d7;
+			    border: 10px solid #db9898;
+			    width:500px;
+			    max-width:100%;
+			    box-sizing: border-box;
+			    padding:10px;
+			}
+			textarea{
+			    width:100%;
+			    min-height:150px;
+			    background-color: #e9bdae;
+			    color:rgb(74, 41, 67);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+				Animal Crossing Webring
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+			</h1>
+			<h3 style="color:red">THE ANIMAL CROSSING RING IS OPEN AGAIN!!!</h3>
+			<div class="box">
+				<h3>notice:</h3>
+				if you find you've suddenly been removed from the webring, it's because I couldn't find a properly connected widget anywhere on your site. Send another application, and I'll re-add you!
+			</div>
+			<h3>RULES:</h3>
+			<ol>
+				<li>No NSFW material displayed without warning on the site!</li>
+				<li>Nothing else really</li>
+			</ol>
+			<h3>HOW TO JOIN:</h3>
+			<p>
+				send me an email at
+				<b>housepenbenggu@gmail.com</b>
+				!!!
+			</p>
+			<p>with this format:</p>
+			<textarea>
+link to your website:
+image of your favorite villager/item(attach/send a link):
+        </textarea
+			>
+			<p>
+				make sure you send it with an email you check frequently so i
+				can contact you when you're added! (I check every week to a
+				month, depending on how busy I am)
+			</p>
+			<p>
+				I'd prefer you add the widget before I add you, but I understand
+				some people dislike having the 'not joined' thing pop up on
+				their site, so do whatever you please lol! Just be aware you may
+				be removed(with warning!) if you don't add it for too long after
+				i email you back...
+			</p>
+			<img
+				style="width: 100%;"
+				src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/Screenshot%202024-06-01%20144527.png"
+			/>
+
+			<center>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+			</center>
+			<br />
+
+			<p></p>
+
+			<h2>how to put the widget in</h2>
+			at the head:
+			<br />
+			<textarea>
+<link rel="stylesheet" href="https://housepen.nekoweb.org/ring/onionring.css"></textarea
+			>
+			<br />
+
+			at where you want the widget:
+			<br />
+			<textarea>
+<div id='animalcrossingring'>
+    <script type="text/javascript" src="https://housepen.nekoweb.org/ring/onionring-variables.js"></script>
+    <script type="text/javascript" src="https://housepen.nekoweb.org/ring/onionring-widget.js"></script>
+</div>
+    </textarea
+			>
+			<br />
+			<p>
+				I do tweak the css a little if I notice it breaking on some
+				sites. ^^ Just something to note.
+			</p>
+
+			<hr />
+			if you want a smaller version replace the css at the head with this:
+			<textarea>
+<link rel="stylesheet" href="https://housepen.nekoweb.org/ring/acwebring_small.css"></textarea
+			>
+			<br />
+			<center>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/Screenshot%202024-06-23%20191740.png"
+					height="150px;"
+				/>
+				<br />
+				looks like this ^^
+			</center>
+			<hr />
+			<center>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+			</center>
+			<br />
+			<h2>
+				members
+				<span id="membercnt"></span>
+				:
+			</h2>
+			<ul id="memberslist"></ul>
+			<hr />
+			<center>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+			</center>
+			<br />
+			<h2>Updates:</h2>
+			<div>
+				(6/6/2024) made the widget a little neater. it also survives
+				resizing a little better.
+			</div>
+			<center>
+				<img
+					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
+				/>
+			</center>
+			<br />
+			<a href="https://housepen.nekoweb.org/">back to home</a>
+		</div>
+		<script src="/ring/onionring-variables.js"></script>
+		<script>
+			var membersd=document.getElementById("memberslist");
+			for(let member in sites){
+			    var x=document.createElement("li");
+			    x.innerHTML=`<a href="${sites[member]}">${sites[member]}</a>`;
+			    membersd.appendChild(x);
+			}
+			document.getElementById("membercnt").innerHTML=`(${sites.length})`;
+		</script>
+	</body>
+</html>
