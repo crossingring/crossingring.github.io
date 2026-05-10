@@ -157,15 +157,25 @@ image of your favorite villager/item(attach/send a link):
 			<br />
 			<a href="https://housepen.nekoweb.org/">back to home</a>
 		</div>
-		<script src="/ring/onionring-variables.js"></script>
-		<script>
-			var membersd=document.getElementById("memberslist");
-			for(let member in sites){
-			    var x=document.createElement("li");
-			    x.innerHTML=`<a href="${sites[member]}">${sites[member]}</a>`;
-			    membersd.appendChild(x);
-			}
-			document.getElementById("membercnt").innerHTML=`(${sites.length})`;
-		</script>
+		<div>
+			<h2>images used</h2>
+			<div id="showcase">
+			</div>
+			<script>
+				var images=["300px-Vic_NL_Model.png",
+				"Chief_NH.png",
+				"Chow_PG.png",
+				"Sprocket_NH.png",
+				"froggychair.png",
+				"raymond2.png",
+				"rosevoid.png"];
+				showcase=document.getElementById("showcase");
+				foreach(var i in images){
+					var k= document.createElement("img");
+					k.src=images[i];
+					showcase.appendChild(k);
+				}
+			</script>
+		</div>
 	</body>
 </html>
