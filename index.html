@@ -147,28 +147,29 @@ image of your favorite villager/item(attach/send a link):
 					src="https://file.garden/ZjYZ6HBkUxBjUnYy/acwebring/GyroidSpeciesIconSilhouette.png"
 				/>
 			</center>
-			<br />
-			<a href="https://housepen.nekoweb.org/">back to home</a>
-		</div>
-		<div>
+			<div>
 			<h2>images used</h2>
 			<div id="showcase">
 			</div>
-			<script>
-				var images=["300px-Vic_NL_Model.png",
-				"Chief_NH.png",
-				"Chow_PG.png",
-				"Sprocket_NH.png",
-				"froggychair.png",
-				"raymond2.png",
-				"rosevoid.png"];
-				showcase=document.getElementById("showcase");
-				foreach(var i in images){
-					var k= document.createElement("img");
-					k.src=images[i];
-					showcase.appendChild(k);
-				}
-			</script>
+				<script>
+					var images=["300px-Vic_NL_Model.png",
+					"Chief_NH.png",
+					"Chow_PG.png",
+					"Sprocket_NH.png",
+					"froggychair.png",
+					"raymond2.png",
+					"rosevoid.png"];
+					showcase=document.getElementById("showcase");
+					for(var i in images){
+						var k= document.createElement("img");
+						k.src=images[i];
+						showcase.appendChild(k);
+					}
+				</script>
+			</div>
+			<br />
+			<a href="https://housepen.nekoweb.org/">back to home</a>
 		</div>
+		
 	</body>
 </html>
